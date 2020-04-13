@@ -116,7 +116,7 @@
             // 
             // fnInput
             // 
-            this.fnInput.Location = new System.Drawing.Point(247, 162);
+            this.fnInput.Location = new System.Drawing.Point(247, 157);
             this.fnInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.fnInput.Name = "fnInput";
             this.fnInput.Size = new System.Drawing.Size(130, 22);
@@ -124,7 +124,7 @@
             // 
             // lnInput
             // 
-            this.lnInput.Location = new System.Drawing.Point(247, 208);
+            this.lnInput.Location = new System.Drawing.Point(247, 203);
             this.lnInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lnInput.Name = "lnInput";
             this.lnInput.Size = new System.Drawing.Size(130, 22);
@@ -132,7 +132,7 @@
             // 
             // dateInput
             // 
-            this.dateInput.Location = new System.Drawing.Point(247, 248);
+            this.dateInput.Location = new System.Drawing.Point(247, 245);
             this.dateInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateInput.Name = "dateInput";
             this.dateInput.Size = new System.Drawing.Size(130, 22);
