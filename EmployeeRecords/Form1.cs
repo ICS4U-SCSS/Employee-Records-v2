@@ -8,11 +8,11 @@ using System.Text;
 using System.Windows.Forms;
 using System.Xml;
 
-namespace EmployeeRecords
+namespace CharacterRecords
 {
     public partial class mainForm : Form
     {
-        List<Employee> employeeDB = new List<Employee>();
+        List<Character> characterList = new List<Character>();
 
         public mainForm()
         {
@@ -36,11 +36,10 @@ namespace EmployeeRecords
 
         private void ClearLabels()
         {
-            idInput.Text = "";
-            fnInput.Text = "";
-            lnInput.Text = "";
-            dateInput.Text = "";
-            salaryInput.Text = "";
+            nameInput.Text = "";
+            classInput.Text = "";
+            levelInput.Text = "";
+            healthInput.Text = "";
         }
 
         private void mainForm_FormClosed(object sender, FormClosedEventArgs e)

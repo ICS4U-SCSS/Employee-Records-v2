@@ -1,4 +1,4 @@
-﻿namespace EmployeeRecords
+﻿namespace CharacterRecords
 {
     partial class mainForm
     {
@@ -29,16 +29,14 @@
         private void InitializeComponent()
         {
             this.titleLabel = new System.Windows.Forms.Label();
-            this.idLabel = new System.Windows.Forms.Label();
-            this.fnLabel = new System.Windows.Forms.Label();
-            this.lnLabel = new System.Windows.Forms.Label();
-            this.dateLabel = new System.Windows.Forms.Label();
-            this.salaryLabel = new System.Windows.Forms.Label();
-            this.idInput = new System.Windows.Forms.TextBox();
-            this.fnInput = new System.Windows.Forms.TextBox();
-            this.lnInput = new System.Windows.Forms.TextBox();
-            this.dateInput = new System.Windows.Forms.TextBox();
-            this.salaryInput = new System.Windows.Forms.TextBox();
+            this.nameLabel = new System.Windows.Forms.Label();
+            this.classLabel = new System.Windows.Forms.Label();
+            this.healthLabel = new System.Windows.Forms.Label();
+            this.levelLabel = new System.Windows.Forms.Label();
+            this.nameInput = new System.Windows.Forms.TextBox();
+            this.classInput = new System.Windows.Forms.TextBox();
+            this.healthInput = new System.Windows.Forms.TextBox();
+            this.levelInput = new System.Windows.Forms.TextBox();
             this.addButton = new System.Windows.Forms.Button();
             this.listButton = new System.Windows.Forms.Button();
             this.removeButton = new System.Windows.Forms.Button();
@@ -49,109 +47,81 @@
             // 
             this.titleLabel.AutoSize = true;
             this.titleLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLabel.Location = new System.Drawing.Point(16, 11);
-            this.titleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.titleLabel.Location = new System.Drawing.Point(74, 9);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(416, 62);
+            this.titleLabel.Size = new System.Drawing.Size(199, 50);
             this.titleLabel.TabIndex = 0;
-            this.titleLabel.Text = "Employee Records";
+            this.titleLabel.Text = "Characters";
             // 
-            // idLabel
+            // nameLabel
             // 
-            this.idLabel.AutoSize = true;
-            this.idLabel.Location = new System.Drawing.Point(75, 115);
-            this.idLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.idLabel.Name = "idLabel";
-            this.idLabel.Size = new System.Drawing.Size(95, 17);
-            this.idLabel.TabIndex = 1;
-            this.idLabel.Text = "Employee ID#";
+            this.nameLabel.AutoSize = true;
+            this.nameLabel.Location = new System.Drawing.Point(56, 95);
+            this.nameLabel.Name = "nameLabel";
+            this.nameLabel.Size = new System.Drawing.Size(35, 13);
+            this.nameLabel.TabIndex = 2;
+            this.nameLabel.Text = "Name";
             // 
-            // fnLabel
+            // classLabel
             // 
-            this.fnLabel.AutoSize = true;
-            this.fnLabel.Location = new System.Drawing.Point(75, 162);
-            this.fnLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.fnLabel.Name = "fnLabel";
-            this.fnLabel.Size = new System.Drawing.Size(76, 17);
-            this.fnLabel.TabIndex = 2;
-            this.fnLabel.Text = "First Name";
+            this.classLabel.AutoSize = true;
+            this.classLabel.Location = new System.Drawing.Point(56, 132);
+            this.classLabel.Name = "classLabel";
+            this.classLabel.Size = new System.Drawing.Size(32, 13);
+            this.classLabel.TabIndex = 3;
+            this.classLabel.Text = "Class";
             // 
-            // lnLabel
+            // healthLabel
             // 
-            this.lnLabel.AutoSize = true;
-            this.lnLabel.Location = new System.Drawing.Point(75, 208);
-            this.lnLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lnLabel.Name = "lnLabel";
-            this.lnLabel.Size = new System.Drawing.Size(76, 17);
-            this.lnLabel.TabIndex = 3;
-            this.lnLabel.Text = "Last Name";
+            this.healthLabel.AutoSize = true;
+            this.healthLabel.Location = new System.Drawing.Point(56, 208);
+            this.healthLabel.Name = "healthLabel";
+            this.healthLabel.Size = new System.Drawing.Size(62, 13);
+            this.healthLabel.TabIndex = 4;
+            this.healthLabel.Text = "Health (HP)";
             // 
-            // dateLabel
+            // levelLabel
             // 
-            this.dateLabel.AutoSize = true;
-            this.dateLabel.Location = new System.Drawing.Point(75, 248);
-            this.dateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.dateLabel.Name = "dateLabel";
-            this.dateLabel.Size = new System.Drawing.Size(72, 17);
-            this.dateLabel.TabIndex = 4;
-            this.dateLabel.Text = "Start Date";
+            this.levelLabel.AutoSize = true;
+            this.levelLabel.Location = new System.Drawing.Point(56, 170);
+            this.levelLabel.Name = "levelLabel";
+            this.levelLabel.Size = new System.Drawing.Size(63, 13);
+            this.levelLabel.TabIndex = 5;
+            this.levelLabel.Text = "Level (1-10)";
             // 
-            // salaryLabel
+            // nameInput
             // 
-            this.salaryLabel.AutoSize = true;
-            this.salaryLabel.Location = new System.Drawing.Point(75, 295);
-            this.salaryLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.salaryLabel.Name = "salaryLabel";
-            this.salaryLabel.Size = new System.Drawing.Size(96, 17);
-            this.salaryLabel.TabIndex = 5;
-            this.salaryLabel.Text = "Annual Salary";
+            this.nameInput.Location = new System.Drawing.Point(185, 91);
+            this.nameInput.Name = "nameInput";
+            this.nameInput.Size = new System.Drawing.Size(98, 20);
+            this.nameInput.TabIndex = 7;
             // 
-            // idInput
+            // classInput
             // 
-            this.idInput.Location = new System.Drawing.Point(247, 112);
-            this.idInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.idInput.Name = "idInput";
-            this.idInput.Size = new System.Drawing.Size(130, 22);
-            this.idInput.TabIndex = 6;
+            this.classInput.Location = new System.Drawing.Point(185, 128);
+            this.classInput.Name = "classInput";
+            this.classInput.Size = new System.Drawing.Size(98, 20);
+            this.classInput.TabIndex = 8;
             // 
-            // fnInput
+            // healthInput
             // 
-            this.fnInput.Location = new System.Drawing.Point(247, 157);
-            this.fnInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.fnInput.Name = "fnInput";
-            this.fnInput.Size = new System.Drawing.Size(130, 22);
-            this.fnInput.TabIndex = 7;
+            this.healthInput.Location = new System.Drawing.Point(185, 205);
+            this.healthInput.Name = "healthInput";
+            this.healthInput.Size = new System.Drawing.Size(98, 20);
+            this.healthInput.TabIndex = 10;
             // 
-            // lnInput
+            // levelInput
             // 
-            this.lnInput.Location = new System.Drawing.Point(247, 203);
-            this.lnInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.lnInput.Name = "lnInput";
-            this.lnInput.Size = new System.Drawing.Size(130, 22);
-            this.lnInput.TabIndex = 8;
-            // 
-            // dateInput
-            // 
-            this.dateInput.Location = new System.Drawing.Point(247, 245);
-            this.dateInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dateInput.Name = "dateInput";
-            this.dateInput.Size = new System.Drawing.Size(130, 22);
-            this.dateInput.TabIndex = 9;
-            // 
-            // salaryInput
-            // 
-            this.salaryInput.Location = new System.Drawing.Point(247, 291);
-            this.salaryInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.salaryInput.Name = "salaryInput";
-            this.salaryInput.Size = new System.Drawing.Size(130, 22);
-            this.salaryInput.TabIndex = 10;
+            this.levelInput.Location = new System.Drawing.Point(185, 166);
+            this.levelInput.Name = "levelInput";
+            this.levelInput.Size = new System.Drawing.Size(98, 20);
+            this.levelInput.TabIndex = 9;
             // 
             // addButton
             // 
-            this.addButton.Location = new System.Drawing.Point(247, 342);
-            this.addButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addButton.Location = new System.Drawing.Point(185, 268);
             this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(130, 34);
+            this.addButton.Size = new System.Drawing.Size(98, 28);
             this.addButton.TabIndex = 11;
             this.addButton.Text = "Add";
             this.addButton.UseVisualStyleBackColor = true;
@@ -159,10 +129,9 @@
             // 
             // listButton
             // 
-            this.listButton.Location = new System.Drawing.Point(28, 427);
-            this.listButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listButton.Location = new System.Drawing.Point(21, 347);
             this.listButton.Name = "listButton";
-            this.listButton.Size = new System.Drawing.Size(125, 34);
+            this.listButton.Size = new System.Drawing.Size(94, 28);
             this.listButton.TabIndex = 13;
             this.listButton.Text = "List";
             this.listButton.UseVisualStyleBackColor = true;
@@ -170,10 +139,9 @@
             // 
             // removeButton
             // 
-            this.removeButton.Location = new System.Drawing.Point(332, 426);
-            this.removeButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.removeButton.Location = new System.Drawing.Point(249, 346);
             this.removeButton.Name = "removeButton";
-            this.removeButton.Size = new System.Drawing.Size(125, 34);
+            this.removeButton.Size = new System.Drawing.Size(94, 28);
             this.removeButton.TabIndex = 14;
             this.removeButton.Text = "Remove";
             this.removeButton.UseVisualStyleBackColor = true;
@@ -183,33 +151,29 @@
             // 
             this.outputLabel.BackColor = System.Drawing.Color.White;
             this.outputLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.outputLabel.Location = new System.Drawing.Point(28, 464);
-            this.outputLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.outputLabel.Location = new System.Drawing.Point(21, 377);
             this.outputLabel.Name = "outputLabel";
-            this.outputLabel.Size = new System.Drawing.Size(429, 152);
+            this.outputLabel.Size = new System.Drawing.Size(322, 124);
             this.outputLabel.TabIndex = 15;
             // 
             // mainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 628);
+            this.ClientSize = new System.Drawing.Size(363, 510);
             this.Controls.Add(this.outputLabel);
             this.Controls.Add(this.removeButton);
             this.Controls.Add(this.listButton);
             this.Controls.Add(this.addButton);
-            this.Controls.Add(this.salaryInput);
-            this.Controls.Add(this.dateInput);
-            this.Controls.Add(this.lnInput);
-            this.Controls.Add(this.fnInput);
-            this.Controls.Add(this.idInput);
-            this.Controls.Add(this.salaryLabel);
-            this.Controls.Add(this.dateLabel);
-            this.Controls.Add(this.lnLabel);
-            this.Controls.Add(this.fnLabel);
-            this.Controls.Add(this.idLabel);
+            this.Controls.Add(this.levelInput);
+            this.Controls.Add(this.healthInput);
+            this.Controls.Add(this.classInput);
+            this.Controls.Add(this.nameInput);
+            this.Controls.Add(this.levelLabel);
+            this.Controls.Add(this.healthLabel);
+            this.Controls.Add(this.classLabel);
+            this.Controls.Add(this.nameLabel);
             this.Controls.Add(this.titleLabel);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "mainForm";
             this.Text = "Add/Delete";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.mainForm_FormClosed);
@@ -221,16 +185,14 @@
         #endregion
 
         private System.Windows.Forms.Label titleLabel;
-        private System.Windows.Forms.Label idLabel;
-        private System.Windows.Forms.Label fnLabel;
-        private System.Windows.Forms.Label lnLabel;
-        private System.Windows.Forms.Label dateLabel;
-        private System.Windows.Forms.Label salaryLabel;
-        private System.Windows.Forms.TextBox idInput;
-        private System.Windows.Forms.TextBox fnInput;
-        private System.Windows.Forms.TextBox lnInput;
-        private System.Windows.Forms.TextBox dateInput;
-        private System.Windows.Forms.TextBox salaryInput;
+        private System.Windows.Forms.Label nameLabel;
+        private System.Windows.Forms.Label classLabel;
+        private System.Windows.Forms.Label healthLabel;
+        private System.Windows.Forms.Label levelLabel;
+        private System.Windows.Forms.TextBox nameInput;
+        private System.Windows.Forms.TextBox classInput;
+        private System.Windows.Forms.TextBox healthInput;
+        private System.Windows.Forms.TextBox levelInput;
         private System.Windows.Forms.Button addButton;
         private System.Windows.Forms.Button listButton;
         private System.Windows.Forms.Button removeButton;
